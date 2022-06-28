@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+a{
+    color: white;
+    text-align: none;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+
+}
+
+.nav-logo{
+    font-size: 2rem;
+}
+
+.nav-logo span{
+    color: yellow;
+}
+
+
+
+@media(max-width:1280px){
+    .container{
+        width: 100%;
+    }
+}
