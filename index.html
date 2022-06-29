@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Movie Search Rating App</title>
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-   
+    <!-- Logo and search box start -->
     <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="/" class="nav-logo">Movie<span>Fanatic</span><img src="https://clipartion.com/wp-content/uploads/2015/11/film-photo-roll-swirly-vector-clipart-free-clip-art-images-830x726.jpg" alt="movie-header"/> </a>
-                <input 
-                class="search-box"
-                type="search-text" 
-                placeholder="Movie name, Genre, etc..." 
-                id="search-box">
-
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" class="nav-logo"
+            >Movie<span>Fanatic</span
+            ><img src="filmimg.jpeg" alt="movie-header" />
+          </a>
+          <form id="form">
+            <input
+              type="text"
+              class="search"
+              id="search"
+              placeholder="Movie name, Genre, etc..."
+            />
+          </form>
+        </nav>
+      </div>
     </header>
+    <!-- logo and search box end -->
+    <!-- Navigation Links Start -->
+    <h2><a href="#">Home</a></h1>
+    <h2><a href="#">Genre</a></h1>
+    <h2><a href="#">Top Rated</a></h1>
+    <h2><a href="#">New Releases</a></h1>
+    <h2><a href="#">Coming Soon</a></h1>
+    <!-- Navigation Links End -->
+    <main id="'main">
+      <!-- Movie boxes start -->
+      <div class="movie">
+        <img src="img.jpeg" alt="" />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span>6.2</span>
+        </div>
+        <div class="overview">
+          <h3>Overview</h3>
+          Movie Summary
+        </div>
+      </div>
+      <div class="movie">
+        <img src="img.jpeg" alt="" />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span>6.2</span>
+        </div>
+        <div class="overview">
+          <h3>Overview</h3>
+          Movie Summary
+        </div>
+      </div>
+      <div class="movie">
+        <img src="img.jpeg" alt="" />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span>6.2</span>
+        </div>
+        <div class="overview">
+          <h3>Overview</h3>
+          Movie Summary
+        </div>
+      </div>
+      <div class="movie">
+        <img src="img.jpeg" alt="" />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span>6.2</span>
+        </div>
+        <div class="overview">
+          <h3>Overview</h3>
+          Movie Summary
+        </div>
+      </div>
+      <!-- Movie boxes end -->
+    </main>
 
- 
-	<script src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
-
