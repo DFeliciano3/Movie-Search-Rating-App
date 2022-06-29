@@ -19,6 +19,12 @@ a{
     color: white;
     text-align: none;
 }
+img{
+    max-width: 6%;
+    height: auto;
+    border-radius: 30px;
+    
+}
 
 .container{
     width: 1280px;
@@ -46,7 +52,6 @@ a{
 .nav-logo span{
     color: yellow;
 }
-
 
 
 @media(max-width:1280px){
