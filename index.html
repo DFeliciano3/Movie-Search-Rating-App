@@ -14,13 +14,12 @@
             <img src="filmimg.jpeg" alt="movie-header" />
           </a>
           <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-              <h2><a href="#">Home</a></h2>
-              <h2><a href="#">Genre</a></h2>
-              <h2><a href="#">Top Rated</a></h2>
-              <h2><a href="#">New Releases</a></h2>
-              <h2><a href="#">Coming Soon</a></h2>
+            <button onclick="handleDropdown()" class="dropbtn">Menu</button>
+            <div id="myDropdownMenu" class="dropdown-content">
+              <h2><a href="https://api.themoviedb.org/3/genre/movie/list?api_key=84c791a4a4576eee38aa7eeffbb5bccd">Genre</a></h2>
+              <h2><a href="https://api.themoviedb.org/3/movie/popular?api_key=84c791a4a4576eee38aa7eeffbb5bccd">Most Popular</a></h2>
+              <h2><a href="https://api.themoviedb.org/3/movie/now_playing?api_key=84c791a4a4576eee38aa7eeffbb5bccd&language=en-US">In Theatres</a></h2>
+              <h2><a href="https://api.themoviedb.org/3/movie/top_rated?api_key=84c791a4a4576eee38aa7eeffbb5bccd&language=en-US">Top Rated</a></h2>
             </div>
           </div>
           <div id="search_container">
@@ -53,9 +52,10 @@
       <!-- Movie card end -->
     </main>
   <div class="footer">
-    <h5>sdfsdfsdf</h5>
-    <form id= "suscribe" method="post" action="mailto:youremail@youremail.com">
-      <button style="font-size: 24px;"> Subscribe Here!</button>
+    <h5>Keep Up To Date With Movies and Submit Your E-mail!</h5>
+    <form id= "subscribe" method="post" action="mailto:youremail@youremail.com">
+      <input style="font-size: 1rem;border-radius: 80px; background-color: silver;
+      border: 2px solid; padding: .5rem; color: black; width: 15rem; " placeholder="Subscribe Here!">
     </form>
   </div>
 

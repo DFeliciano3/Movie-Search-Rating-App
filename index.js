@@ -3,7 +3,15 @@ const domainURL = 'https://api.themoviedb.org/3';
 const pathForAPI = 'https://api.themoviedb.org/3discover/movie?sort_by=popularity.desc&api_key=84c791a4a4576eee38aa7eeffbb5bccd';
 const imageURL = 'https://image.tmdb.org/t/p/w500/';
 const searchURL = 'https://api.themoviedb.org/3/search/movie?api_key=84c791a4a4576eee38aa7eeffbb5bccd';
+const movieGenre = "https://api.themoviedb.org/3/genre/movie/list?api_key=84c791a4a4576eee38aa7eeffbb5bccd";
+const mostPopular = "https://api.themoviedb.org/3/movie/popular?api_key=84c791a4a4576eee38aa7eeffbb5bccd";
+const inTheatres = "https://api.themoviedb.org/3/movie/now_playing?api_key=84c791a4a4576eee38aa7eeffbb5bccd&language=en-US";
+const topRated = "https://api.themoviedb.org/3/movie/top_rated?api_key=84c791a4a4576eee38aa7eeffbb5bccd&language=en-US";
 const main = document.getElementById('main');
+const dropdownBtn = document.querySelector('.dropdown')
+const options = document.querySelectorAll('myDropdownMenu')
+const dropdownList = document.querySelector('.dropdown-content')
+
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('form').addEventListener('submit', (e) => {
@@ -12,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         fetch(searchURL+'&query='+inputSearch)
         .then(res => res.json())
-        .then(data => showAllMovies(data.results))
+        .then(data => renderAllMovies(data.results))
     })
 })
   
@@ -22,13 +30,11 @@ function getAllMovies() {
     .then(res => res.json())
     .then(data => {
        // console.log(data.results)
-        showAllMovies(data.results);
+        renderAllMovies(data.results);
     })
 }
 
-
-
-function showAllMovies(data) {
+function renderAllMovies(data) {
      document.querySelector('main').innerHTML = '';
 
         data.forEach(movie => {
@@ -52,5 +58,13 @@ function showAllMovies(data) {
        document.querySelector('main').appendChild(movieEl);
     })
 };
+
+function handleDropdown() {
+    dropdownList.classList.toggle("show");
+}
+
+
+
+
 
 getAllMovies(pathForAPI)
