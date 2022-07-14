@@ -35,6 +35,8 @@ When using this app, you will encounter a list of most popular movies. You will 
 
 - To subscribe to my webpage, scroll to the very bottom of the page. Enter your email address into the subscription box. Once successful, you should get an alert saying "Thank you for subscribing!"
 
+[Back To The Top](#movie-search-rating-app)
+
 ---
 
 #### Installation 
@@ -48,6 +50,8 @@ To access and download the Movie Search Rating App use the following steps:
 3. In your terminal, type command git clone and paste the ssh code at end of command. 
 
 4. Ensure you are in the correct directory by typing the command "pwd". (If you are not in the correct directory use comman "cd" along with folder name to get to the correct directory of the project.)
+
+[Back To The Top](#movie-search-rating-app)
 
 ---
 
