@@ -51,6 +51,7 @@ To access and download the Movie Search Rating App use the following steps:
 
 4. Ensure you are in the correct directory by typing the command "pwd". (If you are not in the correct directory use comman "cd" along with folder name to get to the correct directory of the project.)
 
+5. Once in the correct directory, in your terminal type the command open index.html (for Mac users) or explorer.exe index.html for WSL. This will open up my webpage for you to use. 
 [Back To The Top](#movie-search-rating-app)
 
 ---
@@ -58,7 +59,9 @@ To access and download the Movie Search Rating App use the following steps:
 #### API Reference 
 
 ```html
-    <p>The Movie Database (https://www.themoviedb.org/movie)</p>
+
+    The Movie Database (https://www.themoviedb.org/movie)
+
 ```
 
 [Back To The Top](#movie-search-rating-app)
