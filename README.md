@@ -32,7 +32,7 @@ All of these are questions I personally assume everyone asks before deciding to 
 #### API Reference 
 
 ```html
-    <p>API info</p>
+    <p>The Movie Database (https://www.themoviedb.org/movie)</p>
 ```
 
 [Back To The Top](#movie-search-rating-app)
