@@ -96,7 +96,7 @@ SOFTWARE.
 
 ## Author Information
 
-- GitHub - 
-- Dev -
+- GitHub - https://github.com/DFeliciano3
+- Dev - https://dev.to/dfeliciano3
 
 [Back To The Top](#movie-search-rating-app)
