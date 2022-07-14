@@ -1,16 +1,11 @@
+//import {API_KEY} from "/Users/Destiny/Development/code/phase-1/Movie-Search-Rating-App/config.js" 
 const myAPIKey = 'api_key=84c791a4a4576eee38aa7eeffbb5bccd'; 
 const domainURL = 'https://api.themoviedb.org/3';
 const pathForAPI = 'https://api.themoviedb.org/3discover/movie?sort_by=popularity.desc&api_key=84c791a4a4576eee38aa7eeffbb5bccd';
 const imageURL = 'https://image.tmdb.org/t/p/w500/';
 const searchURL = 'https://api.themoviedb.org/3/search/movie?api_key=84c791a4a4576eee38aa7eeffbb5bccd';
-const movieGenre = "https://api.themoviedb.org/3/genre/movie/list?api_key=84c791a4a4576eee38aa7eeffbb5bccd";
-const mostPopular = "https://api.themoviedb.org/3/movie/popular?api_key=84c791a4a4576eee38aa7eeffbb5bccd";
-const inTheatres = "https://api.themoviedb.org/3/movie/now_playing?api_key=84c791a4a4576eee38aa7eeffbb5bccd&language=en-US";
-const topRated = "https://api.themoviedb.org/3/movie/top_rated?api_key=84c791a4a4576eee38aa7eeffbb5bccd&language=en-US";
 const main = document.getElementById('main');
-const dropdownBtn = document.querySelector('.dropdown')
-const options = document.querySelectorAll('myDropdownMenu')
-const dropdownList = document.querySelector('.dropdown-content')
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,7 +24,6 @@ function getAllMovies() {
     fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=84c791a4a4576eee38aa7eeffbb5bccd')
     .then(res => res.json())
     .then(data => {
-        //console.log(data.results.map(element => element.id))
         renderAllMovies(data.results);
     })
 }
@@ -40,13 +34,18 @@ function renderAllMovies(data) {
         data.forEach(movie => {
         let {title, poster_path, vote_average, overview, id} = movie;
         let movieEl = document.createElement('div');
+        
         movieEl.addEventListener('mouseover', (e) => {
-            e.preventDefault()
-            let getDivId = movie.id
-            //console.log(movie.id)
-        console.log(e.target.alt)
-        console.log(document.getElementById(`${getDivId}`))
-        console.log(document.getElementsByClassName('.movie-info'))
+            //console.log("mouse in")
+            let overviewDiv = movieEl.querySelector('.hidden-div')
+            //overviewDiv.style.display = 'block'
+            overviewDiv.classList.add('displayed')
+        });
+        movieEl.addEventListener('mouseleave', (e) => {
+            //console.log("mouse in")
+            let overviewDiv = movieEl.querySelector('.hidden-div')
+            //overviewDiv.style.display = 'none'
+            overviewDiv.classList.remove('displayed')
         });
 
         movieEl.classList.add('movie');
@@ -72,3 +71,4 @@ function renderAllMovies(data) {
 
 
 getAllMovies(pathForAPI)
+//console.log(API_KEY)
