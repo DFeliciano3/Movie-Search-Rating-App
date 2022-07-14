@@ -42,8 +42,11 @@ function renderAllMovies(data) {
         let movieEl = document.createElement('div');
         movieEl.addEventListener('mouseover', (e) => {
             e.preventDefault()
-            console.log(e.target.alt)
-        
+            let getDivId = movie.id
+            //console.log(movie.id)
+        console.log(e.target.alt)
+        console.log(document.getElementById(`${getDivId}`))
+        console.log(document.getElementsByClassName('.movie-info'))
         });
 
         movieEl.classList.add('movie');

@@ -12,9 +12,16 @@
 
 ## Description 
 
+For my first project, I have decided to create a movie database website. Creating this website became of interest to me because of how my family and I like to use our free time. We enjoy sitting down to watch a movie together. So of course, prior to deciding on a movie to watch, we always as ourselves: 
+ - What should we watch?
+ - What is this movie about?
+ - Are there good ratings?
+
+All of these are questions I personally assume everyone asks before deciding to watch a movie. Therefore, I decided to create a webpage that answers the majority of those questions. 
+
 ---
 
-## How To Use 
+## Usage 
 
 ---
 

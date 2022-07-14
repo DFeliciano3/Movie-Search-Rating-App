@@ -191,7 +191,7 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.hidden-div{
+/* .hidden-div{
     position: absolute;
     top: 0;
     left: 0;
@@ -203,7 +203,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 
 
