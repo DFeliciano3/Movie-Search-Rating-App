@@ -3,7 +3,9 @@
 ### Table of Contents 
 
 - [Description](#description)
-- [How To Use](#how-to-use)
+- [Usage](#usage)
+- [Installation](#installation)
+- [API Reference](#api-reference)
 - [References](#references)
 - [License](#license)
 - [Author Information](#author-information)
