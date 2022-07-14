@@ -29,7 +29,7 @@ When using this app, you will encounter a list of most popular movies. You will 
 
 - To search a movie you can use the search box (located at the top right of the page). You may type in a text of any movie you wish to search for. 
 
-If you dont remember the name of the movie you wish to search, simply type in any corresponding text related to the movie title and a list of movies will load onto the page that matches your text. 
+    - If you dont remember the name of the movie you wish to search, simply type in any corresponding text related to the movie title and a list of movies will load onto the page that matches your text. 
 
 - To refresh the page to go back to where you began, you can click the lovie logo at the top left screen ("MovieFanatic") and you will be back and the list of most popular movies. 
 
