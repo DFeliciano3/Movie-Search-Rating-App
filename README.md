@@ -12,7 +12,7 @@
 
 ## Description 
 
-For my first project, I have decided to create a movie database website. Creating this website became of interest to me because of how my family and I like to use our free time. We enjoy sitting down to watch a movie together. So of course, prior to deciding on a movie to watch, we always as ourselves: 
+For my first project, I have decided to create a movie database website. Creating this website became of interest to me because of how my family and I like to use our free time. We enjoy sitting down to watch a movie together. So of course, prior to deciding on a movie to watch, we always ask ourselves: 
  - What should we watch?
  - What is this movie about?
  - Are there good ratings?
