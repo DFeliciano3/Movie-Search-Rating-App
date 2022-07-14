@@ -29,7 +29,7 @@ function getAllMovies() {
     fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=84c791a4a4576eee38aa7eeffbb5bccd')
     .then(res => res.json())
     .then(data => {
-       // console.log(data.results)
+        //console.log(data.results.map(element => element.id))
         renderAllMovies(data.results);
     })
 }
@@ -38,17 +38,22 @@ function renderAllMovies(data) {
      document.querySelector('main').innerHTML = '';
 
         data.forEach(movie => {
-        let {title, poster_path, vote_average, overview} = movie;
+        let {title, poster_path, vote_average, overview, id} = movie;
         let movieEl = document.createElement('div');
+        movieEl.addEventListener('mouseover', (e) => {
+            e.preventDefault()
+            console.log(e.target.alt)
+        
+        });
 
         movieEl.classList.add('movie');
         movieEl.innerHTML =  `
         <img src="${imageURL+poster_path}" alt="${title}">
-        <div class="movie-info">
+        <div class="movie-info" id=${id}>
           <h3>${title}</h3>
           <span>${vote_average}</span>
         </div>
-        <div class="overview">
+        <div class="hidden-div">
           <h3>Overview</h3>
           ${overview}
         </div>
@@ -58,10 +63,6 @@ function renderAllMovies(data) {
        document.querySelector('main').appendChild(movieEl);
     })
 };
-
-function handleDropdown() {
-    dropdownList.classList.toggle("show");
-}
 
 
 
