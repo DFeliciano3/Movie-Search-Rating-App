@@ -27,6 +27,16 @@ All of these are questions I personally assume everyone asks before deciding to 
 
 #### Installation 
 
+To access and download the Movie Search Rating App use the following steps: 
+
+1. Insert my project URL (https://github.com/DFeliciano3/Movie-Search-Rating-App.git) into your browser. 
+
+2. Fork and copy SSH Code
+
+3. In your terminal, type command git clone and paste the ssh code at end of command. 
+
+4. Ensure you are in the correct directory by typing the command "pwd". (If you are not in the correct directory use comman "cd" along with folder name to get to the correct directory of the project.)
+
 ---
 
 #### API Reference 
