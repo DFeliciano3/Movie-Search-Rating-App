@@ -1,10 +1,9 @@
-//import {API_KEY} from "/Users/Destiny/Development/code/phase-1/Movie-Search-Rating-App/config.js" 
-const myAPIKey = 'api_key=84c791a4a4576eee38aa7eeffbb5bccd'; 
-const domainURL = 'https://api.themoviedb.org/3';
-const pathForAPI = 'https://api.themoviedb.org/3discover/movie?sort_by=popularity.desc&api_key=84c791a4a4576eee38aa7eeffbb5bccd';
+import {API_KEY} from "/Users/Destiny/Development/code/phase-1/Movie-Search-Rating-App/config.js" 
+//const domainURL = 'https://api.themoviedb.org/3';
+const pathForAPI = 'https://api.themoviedb.org/3discover/movie?sort_by=popularity.desc&api_key='+API_KEY;
 const imageURL = 'https://image.tmdb.org/t/p/w500/';
-const searchURL = 'https://api.themoviedb.org/3/search/movie?api_key=84c791a4a4576eee38aa7eeffbb5bccd';
-const main = document.getElementById('main');
+const searchURL = 'https://api.themoviedb.org/3/search/movie?api_key='+API_KEY;
+//const main = document.getElementById('main');
 
 
 
@@ -15,13 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         fetch(searchURL+'&query='+inputSearch)
         .then(res => res.json())
-        .then(data => renderAllMovies(data.results))
+        .then(data => {
+            let inputSearch = e.target.search.value
+            if (inputSearch) {
+                renderAllMovies(data.results)
+            } else {
+                getAllMovies(pathForAPI)
+            }
+        })
     })
 })
   
 
 function getAllMovies() {
-    fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=84c791a4a4576eee38aa7eeffbb5bccd')
+    fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key='+API_KEY)
     .then(res => res.json())
     .then(data => {
         renderAllMovies(data.results);
@@ -66,9 +72,16 @@ function renderAllMovies(data) {
     })
 };
 
+document.getElementById('likebtn').addEventListener('click', handleLikeBtn);
+
+function handleLikeBtn(){
+    alert('Thank you for liking this page!');
+}
+
+
 
 
 
 
 getAllMovies(pathForAPI)
-//console.log(API_KEY)
+console.log(API_KEY)
