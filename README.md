@@ -72,6 +72,25 @@ To access and download the Movie Search Rating App use the following steps:
 ---
 
 ## References
+The following websites are great references: 
+
+Fetch API's 
+```html
+
+ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch   
+
+```
+Create a Moueover event as I did to view movie overview
+```html
+
+ https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_even   
+
+```
+
+
+
+
+
 [Back To The Top](#movie-search-rating-app)
 
 ---
