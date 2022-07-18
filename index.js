@@ -1,10 +1,12 @@
 import {API_KEY} from "/Users/Destiny/Development/code/phase-1/Movie-Search-Rating-App/config.js" 
+
 //const domainURL = 'https://api.themoviedb.org/3';
 const pathForAPI = 'https://api.themoviedb.org/3discover/movie?sort_by=popularity.desc&api_key='+API_KEY;
 const imageURL = 'https://image.tmdb.org/t/p/w500/';
 const searchURL = 'https://api.themoviedb.org/3/search/movie?api_key='+API_KEY;
 //const main = document.getElementById('main');
 
+//console.log(API_KEY)
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -79,9 +81,4 @@ function handleLikeBtn(){
 }
 
 
-
-
-
-
 getAllMovies(pathForAPI)
-console.log(API_KEY)

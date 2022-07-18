@@ -1,0 +1,23 @@
+{
+  "name": "movie-search-rating-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/DFeliciano3/Movie-Search-Rating-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DFeliciano3/Movie-Search-Rating-App/issues"
+  },
+  "homepage": "https://github.com/DFeliciano3/Movie-Search-Rating-App#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

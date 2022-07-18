@@ -25,7 +25,7 @@ All of these are questions I personally assume everyone asks before deciding to 
 
 ## Usage 
 
-When using this app, you will encounter a list of most popular movies. You will see the title, image, the overall rating (rating out of 10.0), and a brief overview of the movie. 
+When using this app, you will encounter a list of most popular movies. You will see the title, image, the overall rating (rating out of 10), and a brief overview of the movie. 
 
 - To view the summary of the movie, you can hover over the movie image. 
 
@@ -33,9 +33,9 @@ When using this app, you will encounter a list of most popular movies. You will 
 
     - If you dont remember the name of the movie you wish to search, simply type in any corresponding text related to the movie title and a list of movies will load onto the page that matches your text. 
 
-- To refresh the page to go back to where you began, you can click the lovie logo at the top left screen ("MovieFanatic") and you will be back and the list of most popular movies. 
+- To refresh the page clear your search box, hit enter, and you will be back to the original page where you started. 
 
-- To subscribe to my webpage, scroll to the very bottom of the page. Enter your email address into the subscription box. Once successful, you should get an alert saying "Thank you for subscribing!"
+- To like my webpage, hit the like button on the very bottom of the page. Once successful, you should get an alert saying "Thank you for liking this page!"
 
 [Back To The Top](#movie-search-rating-app)
 
@@ -53,7 +53,8 @@ To access and download the Movie Search Rating App use the following steps:
 
 4. Ensure you are in the correct directory by typing the command "pwd". (If you are not in the correct directory use comman "cd" along with folder name to get to the correct directory of the project.)
 
-5. Once in the correct directory, in your terminal type the command open index.html (for Mac users) or explorer.exe index.html for WSL. This will open up my webpage for you to use. 
+5. Once in the correct directory, in your terminal type the command open index.html (for Mac users) or explorer.exe index.html for WSL. This will open up my webpage for you to use.
+
 [Back To The Top](#movie-search-rating-app)
 
 ---
