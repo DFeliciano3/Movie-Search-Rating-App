@@ -7,7 +7,7 @@ const searchURL = 'https://api.themoviedb.org/3/search/movie?api_key='+API_KEY;
 //console.log(API_KEY)
 
 
-document.addEventListener('DOMContentLoaded', () => {
+//document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('form').addEventListener('submit', (e) => {
         e.preventDefault()
         let inputSearch = e.target.search.value
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-})
+//})
   
 
 function getAllMovies() {
