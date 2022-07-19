@@ -74,21 +74,26 @@ To access and download the Movie Search Rating App use the following steps:
 ## References
 The following websites are great references: 
 
-Fetch API's 
+- Fetch API's 
 ```html
 
  https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch   
 
 ```
-Create a Moueover event as I did to view movie overview
+- Create a Moueover event as I did to view movie overview
 ```html
 
- https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_even   
+ https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event   
 
 ```
 
+- Want your HTML document to load without waiting on sytlesheets or images to finish loading? Take a look at the DOMContentLoaded information
 
+```html
 
+ https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event  
+
+```
 
 
 [Back To The Top](#movie-search-rating-app)
