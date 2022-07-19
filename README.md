@@ -31,9 +31,9 @@ When using this app, you will encounter a list of most popular movies. You will 
 
 - To search a movie you can use the search box (located at the top right of the page). You may type in a text of any movie you wish to search for. 
 
-    - If you dont remember the name of the movie you wish to search, simply type in any corresponding text related to the movie title and a list of movies will load onto the page that matches your text. 
+    - If you dont remember the name of the movie you wish to search, simply type in any corresponding text related to the movie title and a list of movies will load onto the page that matches your text input. 
 
-- To refresh the page clear your search box, hit enter, and you will be back to the original page where you started. 
+- To refresh the page clear your search box by deleting your text, hit enter, and you will be back to the original page where you originally started. 
 
 - To like my webpage, hit the like button on the very bottom of the page. Once successful, you should get an alert saying "Thank you for liking this page!"
 
@@ -87,7 +87,7 @@ The following websites are great references:
 
 ```
 
-- Want your HTML document to load without waiting on sytlesheets or images to finish loading? Take a look at the DOMContentLoaded information
+- Want your HTML document to load without waiting on sytlesheets or images to finish loading? Take a look at the DOMContentLoaded information:
 
 ```html
 
